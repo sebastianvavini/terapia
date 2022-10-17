@@ -1,4 +1,4 @@
-package com.goodbit.terapia.ui.home
+package com.goodbit.terapia.ui.entrada
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.goodbit.terapia.databinding.FragmentHomeBinding
+import com.goodbit.terapia.databinding.FragmentEntradaBinding
 
-class HomeFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+class EntradaFragment : Fragment() {
+
+    private var _binding: FragmentEntradaBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,9 +24,9 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this).get(EntradaViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentEntradaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textHome

@@ -1,13 +1,13 @@
-package com.goodbit.terapia.ui.gallery
+package com.goodbit.terapia.ui.processo
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class ProcessoViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is gallery Fragment"
+        value = "This is Processo Fragment"
     }
     val text: LiveData<String> = _text
 }
