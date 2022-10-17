@@ -16,7 +16,7 @@ class ProblemaDataBase( context: Context): SQLiteOpenHelper(context, NAME, null,
         db.execSQL("create table "+Constants.TABLE.TABLE_PROBLEMA+" (" +
                 Constants.COLUMNS_PROBLEMA.id + " primary key autoincrement," +
                 Constants.COLUMNS_PROBLEMA.sintomas+" text,"+
-                Constants.COLUMNS_PROBLEMA.frustracoes+" text,"+                
+                Constants.COLUMNS_PROBLEMA.frustracoes+" text,"+
                 Constants.COLUMNS_PROBLEMA.desejos+" text);")
 
         db.execSQL("create table "+Constants.TABLE.TABLE_AGENDA+ " (" +
