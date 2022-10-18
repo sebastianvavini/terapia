@@ -1,5 +1,6 @@
 package com.goodbit.terapia.model
 
+import android.content.ContentValues
 import android.content.Context
 import com.goodbit.terapia.viewmodel.Constants
 
@@ -18,8 +19,24 @@ class ProblemaRepository private constructor(context: Context){
         }
 
 
-    }fun insert(problemaModel: ProblemaModel){
+    }
+    fun insert(problemaModel: ProblemaModel):Boolean{
+            try{
+                val db= problemaDataBase.writableDatabase
+                val values= ContentValues()
 
+                values.put(Constants.COLUMNS_PROBLEMA.desejos,problemaModel.getDesejo())
+                values.put(Constants.COLUMNS_PROBLEMA.sintomas,problemaModel.getSintoma())
+                values.put(Constants.COLUMNS_PROBLEMA.frustracoes,problemaModel.getFrustracao())
+
+
+
+                db.insert(Constants.TABLE.TABLE_PROBLEMA,null,values)
+                return true
+
+            }catch (e:Exception){
+                return false
+            }
 
     }
 

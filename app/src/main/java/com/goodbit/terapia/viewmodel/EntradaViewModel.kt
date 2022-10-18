@@ -15,11 +15,12 @@ class EntradaViewModel(application: Application) : AndroidViewModel(application)
     private val listAllProblemas= MutableLiveData<List<ProblemaModel>>()
     val problemas: LiveData<List<ProblemaModel>> = listAllProblemas
 
+
     fun getAll(){
         listAllProblemas.value=    repository.getAllProblems()
     }
-    fun insert(problemaModel: ProblemaModel){
 
 
-    }
+
+
 }
