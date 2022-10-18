@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_entrada"
-        android:name="com.goodbit.terapia.ui.entrada.EntradaFragment"
+        android:name="com.goodbit.terapia.view.entrada.EntradaFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_entrada" />
 
     <fragment
         android:id="@+id/nav_processo"
-        android:name="com.goodbit.terapia.ui.processo.ProcessoFragment"
+        android:name="com.goodbit.terapia.view.processo.ProcessoFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_processo" />
 
     <fragment
         android:id="@+id/nav_saida"
-        android:name="com.goodbit.terapia.ui.saida.SaidaFragment"
+        android:name="com.goodbit.terapia.view.saida.SaidaFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_saida" />
 </navigation>

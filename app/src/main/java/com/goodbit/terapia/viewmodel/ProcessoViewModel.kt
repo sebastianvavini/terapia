@@ -1,4 +1,4 @@
-package com.goodbit.terapia.ui.processo
+package com.goodbit.terapia.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

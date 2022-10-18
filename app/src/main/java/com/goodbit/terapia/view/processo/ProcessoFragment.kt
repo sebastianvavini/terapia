@@ -1,4 +1,4 @@
-package com.goodbit.terapia.ui.processo
+package com.goodbit.terapia.view.processo
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.goodbit.terapia.databinding.FragmentProcessoBinding
+import com.goodbit.terapia.viewmodel.ProcessoViewModel
 
 class ProcessoFragment : Fragment() {
 
@@ -28,9 +29,9 @@ class ProcessoFragment : Fragment() {
         _binding = FragmentProcessoBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
+       // val textView: TextView = binding.textGallery
         galleryViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+           // textView.text = it
         }
         return root
     }

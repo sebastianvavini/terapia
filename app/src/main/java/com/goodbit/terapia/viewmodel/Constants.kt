@@ -1,18 +1,6 @@
 package com.goodbit.terapia.viewmodel
 
 class Constants {
-    /* object FOCO{
-        const val PENSAMENTOS="EM AÇÃO"
-        const val RESPIRACAO="EM REPOUSO"
-        const val PARADO="PARADO"
-    } **/
-
-/* object BUTTON{
-     const val MEDITA="MEDITA"
-     const val ACAO="ACAO"
- }**/
-
-
 
  object TABLE{
      const val TABLE_PROBLEMA="Problema"

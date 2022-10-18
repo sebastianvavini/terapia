@@ -1,4 +1,4 @@
-package com.goodbit.terapia.ui.saida
+package com.goodbit.terapia.view.saida
 
 import android.os.Bundle
 import android.view.LayoutInflater
